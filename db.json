@@ -1,0 +1,710 @@
+[
+{
+  "model": "users.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$htFm1TcL4N6o$G2xcordM6xS2hNrdk87wU0MCqgpJStstOV3khXKDMWI=",
+    "last_login": "2019-08-14T15:00:45.477Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@example.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2019-08-14T15:00:25.862Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$E7sELgcPP0W6$R/BIbPkcOGRAOnSFk/RIBjft27Y0peaowQOMaKvM/r4=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "user1",
+    "first_name": "",
+    "last_name": "",
+    "email": "user1@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-08-14T15:01:39Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$V2PFNQDFK2VT$4UiY8fJYHC8XDN+fcF2qdJvwu7THybLdIG+qlrSAWH8=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "user2",
+    "first_name": "",
+    "last_name": "",
+    "email": "user2@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-08-14T15:01:49Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$i9IcRf9FuKdA$Ndm+UqY9/F14tYs440QfMfPOlt5R7KeKWQSG71x/OD4=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "user3",
+    "first_name": "",
+    "last_name": "",
+    "email": "user3@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-08-14T15:01:59Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$aH0AAf0gfpc1$Bw1Uy9HR+fk0CmncRMlvSb/m2uzrCvG3kG4GCIXCdTw=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "user4",
+    "first_name": "",
+    "last_name": "",
+    "email": "user4@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-08-14T15:02:09Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 6,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$KVFKE3lbxiww$xq6HXI/qS6xkYaHfap2vJ7tFIGWZZRfW38PUzSpBlNo=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "user5",
+    "first_name": "",
+    "last_name": "",
+    "email": "user5@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-08-14T15:02:19Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 1,
+  "fields": {
+    "title": "For loops in Django",
+    "body": "For loop is used to iterate over any iterable object, accessing one item at a time and making it available inside the for loop body.\r\n\r\nFor example, if you want to create a drop-down of countries in Django template, you can use the below code.\r\n\r\nTo iterate over a dictionary of people's name and their age, just like you would do in Python, use the below code.",
+    "created_at": "2019-08-14T15:09:13.848Z",
+    "created_by": 2
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 2,
+  "fields": {
+    "title": "Image Classification in Machine Learning",
+    "body": "For a fun challenge, I started learning a little bit of AI and Machine Learning. I\u2019ve been studying the excellent Fast.AI course. This is a series of videos which takes you from zero to hero with Machine Learning for free.\r\n\r\nAs part of my learning process, I wanted to use my own dataset. I took a few days to choose a problem but my criteria were:\r\n\r\n    A freely available dataset\r\n    Could be used for social good\r\n    Not overly complex for my first attempt\r\n\r\nSo after scouring Kaggle and the internet in general for a cool dataset, I stumbled upon a database of knife images which contained both positive and negative examples. With my dataset in hand, it was time to get to work!",
+    "created_at": "2019-08-14T15:09:44.093Z",
+    "created_by": 2
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 3,
+  "fields": {
+    "title": "Facebook Unofficial API + Chatterbot Bot",
+    "body": "Unless you teach your bot new tricks its going to remain dum.\r\n\r\nHello everyone. In this tutorial we are going to teach our bot some new tricks\r\nTraining your chatbot\r\n\r\nAs i browsed the web i only found two way to train your chatbot:\r\n\r\n    Using Listrainer class\r\n    Using chatterbot corpus",
+    "created_at": "2019-08-14T15:10:08.074Z",
+    "created_by": 2
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 4,
+  "fields": {
+    "title": "In-line Renaming of Pandas Aggregates",
+    "body": "When working with aggregating dataframes in pandas, I've found myself frustrated with how the results of aggregated columns are named. By default, they inherit the name of the column of which you're aggregating. For example.\r\n\r\nSo obviously, we as the writers of the above code know that we took a mean of sepal length. But just looking at the output we have no idea what was done to the sepal length value. We can get around this if we enclose the aggregate function in a list",
+    "created_at": "2019-08-14T15:13:03.214Z",
+    "created_by": 3
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 5,
+  "fields": {
+    "title": "Develop a Django + Celery app in Kubernetes",
+    "body": "Django + Celery is probably the most popular solution to develop websites that require running tasks in the background. Developing a Django + Celery app locally is complex, as you need to run different services: Django, Celery worker, Celery beat, Redis, databases\u2026 docker-compose is a very convenient tool in this case. You can spin up your local environment with docker-compose in just one single command. And thanks to the use of volume mounts, you are able to hot reload your application in seconds.\r\n\r\nIn this blog post, we want to go a step forward and explain why you should develop your Django + Celery app directly in Kubernetes. The benefits are:\r\n\r\n    Reduce integration issues by developing in a more production-like environment, consuming Kubernetes manifests, secrets, volumes or config maps from development.\r\n    Overcome local development limitations. You will be able to develop against any Kubernetes cluster, local or remote. And having a lot of microservices makes it harder and harder to run the entire development environment locally.",
+    "created_at": "2019-08-14T15:13:31.053Z",
+    "created_by": 3
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 6,
+  "fields": {
+    "title": "Picking up from other languages",
+    "body": "After many years of doing Python, first as a hobbyist and then in a professional setting, I\u2019ve had to do some amount of Go programming. Also, I\u2019ve been trying to explore other languages, primarily Rust, but have been touching some C while following some projects ([1] and [2]).\r\n\r\nThere is value in learning from other languages for the sake of itself, one can end up deepening knowledge and getting enlightenment through it. I remember having that feeling while doing some Ruby stuff in a MOOC years ago. In this article, I want to explore some of the learnings I\u2019ve had lately. For a comprehensive view on this topic and how it reflects mainly in Python this article is a great and insightful read.",
+    "created_at": "2019-08-14T15:13:46.138Z",
+    "created_by": 3
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 7,
+  "fields": {
+    "title": "Designing Continuous Build Systems: Handling Webhooks with Sanic",
+    "body": "After covering how to design a build pipeline and define build directives in the continuous builds series, it\u2019s time to look at handling events from a code repository.\r\n\r\nAs internet standards evolved over the years, the HTTP protocol has become more prevalent. It\u2019s easier to route, simpler to implement and even more reliable. This ubiquity makes it easier for applications that traverse or live on the public internet to communicate with each other. As a result of this, the idea of webhooks came to be as an \u201cevent-over-http\u201d mechanism.\r\n\r\nWith GitHub as the repository management platform, we have the advantage of using their webhook system to communicate user actions over the internet and into our build pipeline.",
+    "created_at": "2019-08-14T15:15:04.985Z",
+    "created_by": 4
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 8,
+  "fields": {
+    "title": "Distributing PyPI Packages using API Tokens in TravisCI",
+    "body": "The PyPI package index is one of the tools that makes Python so powerful, with just a simple command, you get access to thousands of cool libraries, ready for you to use in your project.\r\n\r\nWriting Python packages and deploying them to PyPI is one way for sharing libraries to the open-source community. For beginners, submitting a package to PyPI is not an easy task, but the community is working hard, for make this process more easier, you can read more about packaging, following the official Python Packaging Guide.\r\n\r\nIn this post, I'm going to skip some things/steps about packaging, and guide you through the process of using the newest API Tokens feature in PyPI, for your continuous integration and deployment (CI/CD).\r\n\r\nFor this we'll use the PyPI Test instance, which is a better option for doing initial test in your packages, like: testing if the docs render correctly, or if the classifiers in your setup.py are correct, for example.",
+    "created_at": "2019-08-14T15:15:23.992Z",
+    "created_by": 4
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 9,
+  "fields": {
+    "title": "article found: Python is eating the world",
+    "body": "In late 1994, a select group of programmers from across the US met to discuss their new secret weapon.\r\n\r\nBarry Warsaw was one of the 20 or so developers present at that first-ever workshop for the newly-created Python programming language and recalls the palpable excitement among those early users.",
+    "created_at": "2019-08-14T15:15:52.855Z",
+    "created_by": 4
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 10,
+  "fields": {
+    "title": "Descriptor Protocol and how ORM uses it?",
+    "body": "According to official python3 docs, this is what they are saying\r\n\r\n    In general, a descriptor is an object attribute with \u201cbinding behavior\u201d, one whose attribute access has been overridden by methods in the descriptor protocol. Those methods are __get__(), __set__(), and __delete__(). If any of those methods are defined for an object, it is said to be a descriptor.\r\n\r\nNow it seems pretty clear that we need a class and and in that class we need to define these methods and that's it. Let's try out",
+    "created_at": "2019-08-14T15:16:48.077Z",
+    "created_by": 5
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 11,
+  "fields": {
+    "title": "A short brief about Classification",
+    "body": "What is Classification?\r\n\r\nThis is the first question I did when I heard the term Classification. The definition says it is, fundamentally, a model to predict labels. It brought me a new question. What are labels? Well, in a dataset for a classification models we will find features and labels, where a feature is a column used as an input data and the label is the value we want to predict.\r\nSo, when we know what value we want to predict with a Machine Learning model we have a Classification Problem.\r\nTesting Classification Models\r\n\r\nLet's get a NBA Log dataset. The goal is to predict if a player will last longer than 5 years in league. This data contains a target column, the TARGET_5Yrs column can be 0 (< 5 years) or 1 (>= 5 years). As we know our target (label), we can say for sure this is a Classification problem.\r\n\r\nThis dataset can be found here.\r\nRequirements\r\n\r\nHere are the libraries we will use in this example.",
+    "created_at": "2019-08-14T15:17:10.564Z",
+    "created_by": 5
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 12,
+  "fields": {
+    "title": "10 Great Programming Projects to Improve Your Resume and Learn to Program",
+    "body": "One of the common questions we get when it comes to learning how to program, is: \u201cWhat are some good ideas for projects to build?\u201d\r\n\r\nNow, we hear the common cliche answers often, like \u201cbuild a chess game\u201d or \u201ccommand line interface\u201d. There is nothing wrong with these answers.\r\n\r\nHowever, we think these examples don\u2019t match modern programming needs. A big portion of modern software is SaaS and web apps. This means you need to know how to program online.\r\n\r\nThere are a lot more complexities that go into programming a website, or app, that has users, requires servers, authentication, and databases. This forces you to interact with technologies you\u2019ll never need when developing a command line tic-tac-toe game.\r\n\r\nSome of this can also be managed by AWS and other third parties that are commonly used by large corporations. Again, exposing you to technologies that are useful and heavily used in industry. This will be far more practical on a resume, as well as help you learn how to use new technologies.\r\n\r\nTip: If you pick a complex project, then focus on building one feature at a time. Building an entire website or app all at once is difficult. Start by building a login page, or maybe the main landing page after the user logs in. If you try to take on the whole project at once then you will likely fail.",
+    "created_at": "2019-08-14T15:17:27.497Z",
+    "created_by": 5
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 13,
+  "fields": {
+    "title": "Dead Simple Python: Lambdas, Decorators, and Other Magic",
+    "body": "Python has a reputation for looking like magic, and that's probably due in part to the many forms a function can take: lambdas, decorators, closures, and more. A well-placed function call can do amazing things, without ever writing a single class!\r\n\r\nYou might say Functions Are Magic.\r\nFunctions Revisited\r\n\r\nWe already touched on functions in Data Typing and Immutability. If you haven't read that article yet, I'd recommend going back and taking a look now.\r\n\r\nLet's look at a quick example of a function, just to make sure we're on the same page.",
+    "created_at": "2019-08-14T15:23:58.539Z",
+    "created_by": 6
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 14,
+  "fields": {
+    "title": "Learning Python from Scratch: Tuples and Sets",
+    "body": "The following are notes and details recapping a past live stream where we live code together. The idea behind these streams is that they provide real-world examples of running into problems and solving them or working towards solving them live.",
+    "created_at": "2019-08-14T15:24:15.913Z",
+    "created_by": 6
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 15,
+  "fields": {
+    "title": "Adding charts to Django admin",
+    "body": "Introduction\r\n\r\nDjango offers a functional admin UI out of the box with CRUD interface for db management. This covers most use cases for basic content and user management systems. However, it doesn't have exploratory views that show summaries or historical trends which is something you'd expect from an admin dashboard.\r\n\r\nLuckily, the django admin app is extensible and with a few tweaks we can add interactive Javascript charts to the admin.\r\nProblem\r\n\r\nI wanted to get a graph overview of the email subscribers over time on findwork.dev. Is the site growing or stagnating in terms of email subscribers? How many subscribers did we have last month? What week did we gain most subscribers? Are all subscribers verifying their emails?\r\n\r\nUsing exploratory charts we can get a historical overview to how our site is performing.\r\n\r\nI initially explored the land of ready-made Django admin apps and dashboards. The requirements were that it included charting abilities, was well documented and looked good. While all of the apps I experimented with looked better that the default admin in terms of styling, they were either lacking in documentation or were unmaintained.\r\n\r\n    xadmin - no documentation in English\r\n    django-jet - unmaintained since the core team is working on a SaaS alternative\r\n    django-grapinelli - no charting ability\r\n\r\nThat's when an idea sprung to mind: why not extend the default admin app?\r\nExtending django-admin\r\n\r\nThe django admin app is composed ModelAdmin classes. These represent the visual view of your model in the admin interface. By default a ModelAdmin class comes with 5 default views:\r\n\r\n    ChangeList - a list view of a model collection\r\n    Add - a view that allows you to add a new model instance\r\n    Change - a view for updating a model instance\r\n    Delete - a view for confirming deletion of a model instance\r\n    History - history of actions taken on model instance\r\n\r\nThe ChangeList view is the default admin view when you want to see a particular model. I wanted to add a chart here so that any time I open the EmailSubscribers page I'd be presented with the added subscribers over time.",
+    "created_at": "2019-08-14T15:24:42.327Z",
+    "created_by": 6
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 1,
+  "fields": {
+    "body": "When life gives you lemons, squirt someone in the eye.",
+    "post": 15,
+    "created_at": "2019-08-14T15:31:03.807Z",
+    "created_by": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 2,
+  "fields": {
+    "body": "Be happy - it drives people crazy",
+    "post": 15,
+    "created_at": "2019-08-14T15:31:15.711Z",
+    "created_by": 3
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 3,
+  "fields": {
+    "body": "Optimist: someone who figures that taking a step backward after taking a step forward is not a disaster; it's more like a cha-cha",
+    "post": 15,
+    "created_at": "2019-08-14T15:31:28.496Z",
+    "created_by": 4
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 4,
+  "fields": {
+    "body": "Live each day like it's your second to the last. That way you can fall asleep at night",
+    "post": 14,
+    "created_at": "2019-08-14T15:31:44.592Z",
+    "created_by": 4
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 5,
+  "fields": {
+    "body": "Even a stopped clock is right twice every day. After some years, it can boast of a long series of successes",
+    "post": 14,
+    "created_at": "2019-08-14T15:31:58.646Z",
+    "created_by": 5
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 6,
+  "fields": {
+    "body": "Fall seven times, stand up eight",
+    "post": 14,
+    "created_at": "2019-08-14T15:32:10.839Z",
+    "created_by": 6
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 7,
+  "fields": {
+    "body": "Yesterday is history. Tomorrow is a mystery. Today is a gift. That's why we call it 'The Present",
+    "post": 13,
+    "created_at": "2019-08-14T15:32:26.187Z",
+    "created_by": 2
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 8,
+  "fields": {
+    "body": "There is nothing in a caterpillar that tells you it's going to be a butterfly",
+    "post": 13,
+    "created_at": "2019-08-14T15:32:36.677Z",
+    "created_by": 3
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 9,
+  "fields": {
+    "body": "Life itself is the most wonderful fairy tale",
+    "post": 13,
+    "created_at": "2019-08-14T15:32:45.926Z",
+    "created_by": 4
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 10,
+  "fields": {
+    "body": "A big part of being a well-adjusted person is accepting that you can\u2019t be good at everything",
+    "post": 12,
+    "created_at": "2019-08-14T15:33:04.613Z",
+    "created_by": 2
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 11,
+  "fields": {
+    "body": "A successful man is one who can lay a firm foundation with the bricks others have thrown at him",
+    "post": 12,
+    "created_at": "2019-08-14T15:33:14.738Z",
+    "created_by": 3
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 12,
+  "fields": {
+    "body": "Believe that life is worth living and your belief will help create the fact.",
+    "post": 12,
+    "created_at": "2019-08-14T15:33:26.221Z",
+    "created_by": 3
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 13,
+  "fields": {
+    "body": "Choose to be optimistic, it feels better",
+    "post": 11,
+    "created_at": "2019-08-14T15:33:38.860Z",
+    "created_by": 4
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 14,
+  "fields": {
+    "body": "Even if happiness forgets you a little bit, never completely forget about it.",
+    "post": 11,
+    "created_at": "2019-08-14T15:33:50.446Z",
+    "created_by": 5
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 15,
+  "fields": {
+    "body": "In three words I can sum up everything I\u2019ve learned about life. It goes on",
+    "post": 11,
+    "created_at": "2019-08-14T15:34:03.101Z",
+    "created_by": 6
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 16,
+  "fields": {
+    "body": "It doesn\u2019t matter how slow you go, as long as you don\u2019t stop",
+    "post": 10,
+    "created_at": "2019-08-14T15:34:27.723Z",
+    "created_by": 2
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 17,
+  "fields": {
+    "body": "Success is the sum of small efforts, repeated day-in and day-out",
+    "post": 10,
+    "created_at": "2019-08-14T15:34:37.256Z",
+    "created_by": 2
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 18,
+  "fields": {
+    "body": "The meaning of life is to find your gift. The purpose of life is to give it away.",
+    "post": 10,
+    "created_at": "2019-08-14T15:34:55.565Z",
+    "created_by": 3
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 19,
+  "fields": {
+    "body": "You are today where your thoughts have brought you; you will be tomorrow where your thoughts take you",
+    "post": 10,
+    "created_at": "2019-08-14T15:35:10.173Z",
+    "created_by": 4
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 20,
+  "fields": {
+    "body": "You\u2019ve got to get up every morning with determination if you\u2019re going to go to bed with satisfaction",
+    "post": 9,
+    "created_at": "2019-08-14T15:36:03.352Z",
+    "created_by": 4
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 21,
+  "fields": {
+    "body": "Believe that life is worth living, and your belief will help create the fact",
+    "post": 9,
+    "created_at": "2019-08-14T15:36:15.549Z",
+    "created_by": 5
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 22,
+  "fields": {
+    "body": "Choose to be optimistic; it feels better.",
+    "post": 9,
+    "created_at": "2019-08-14T15:36:25.324Z",
+    "created_by": 6
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 23,
+  "fields": {
+    "body": "Even if happiness forgets you a little bit, never completely forget about it.",
+    "post": 8,
+    "created_at": "2019-08-14T15:36:36.456Z",
+    "created_by": 2
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 24,
+  "fields": {
+    "body": "In three words, I can sum up everything I\u2019ve learned about life. It goes on",
+    "post": 8,
+    "created_at": "2019-08-14T15:36:48.638Z",
+    "created_by": 4
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 25,
+  "fields": {
+    "body": "It doesn\u2019t matter how slow you go, as long as you don\u2019t stop",
+    "post": 7,
+    "created_at": "2019-08-14T15:37:22.780Z",
+    "created_by": 2
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 26,
+  "fields": {
+    "body": "Success is the sum of small efforts, repeated day in and day-out",
+    "post": 7,
+    "created_at": "2019-08-14T15:48:18.388Z",
+    "created_by": 3
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 27,
+  "fields": {
+    "body": "The meaning of life is to find your gift. The purpose of life is to give it away",
+    "post": 7,
+    "created_at": "2019-08-14T15:48:28.365Z",
+    "created_by": 4
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 28,
+  "fields": {
+    "body": "You are today where your thoughts have brought you; you will be tomorrow where your thoughts take you",
+    "post": 6,
+    "created_at": "2019-08-14T15:48:40.796Z",
+    "created_by": 5
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 29,
+  "fields": {
+    "body": "You\u2019ve got to get up every morning with determination if you\u2019re going to go to bed with satisfaction.",
+    "post": 6,
+    "created_at": "2019-08-14T15:48:55.176Z",
+    "created_by": 6
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 30,
+  "fields": {
+    "body": "Your problem isn\u2019t the problem. Your reaction is the problem.",
+    "post": 5,
+    "created_at": "2019-08-14T15:49:10.375Z",
+    "created_by": 2
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 31,
+  "fields": {
+    "body": "The question isn\u2019t who\u2019s going to let me; it\u2019s who is going to stop me",
+    "post": 5,
+    "created_at": "2019-08-14T15:49:32.733Z",
+    "created_by": 3
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 32,
+  "fields": {
+    "body": "\u201cCourage doesn\u2019t always roar. Sometimes courage is the quiet voice at the end of the day, saying, \u201cI will try again tomorrow.\u201d",
+    "post": 5,
+    "created_at": "2019-08-14T15:49:45.951Z",
+    "created_by": 4
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 33,
+  "fields": {
+    "body": "You may have to fight a battle more than once to win it",
+    "post": 4,
+    "created_at": "2019-08-14T15:50:02.094Z",
+    "created_by": 5
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 34,
+  "fields": {
+    "body": "If it\u2019s not exactly like you thought it would be, you think it\u2019s a failure. What about the spectrum of colors in between",
+    "post": 4,
+    "created_at": "2019-08-14T15:50:14.873Z",
+    "created_by": 6
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 35,
+  "fields": {
+    "body": "In times of pain, when the future is too terrifying to contemplate and the past too painful to remember, I have learned to pay attention to right now. The precise moment I was in was always the only safe place for me",
+    "post": 4,
+    "created_at": "2019-08-14T15:50:25.619Z",
+    "created_by": 3
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 36,
+  "fields": {
+    "body": "The future belongs to those who believe in the beauty of their dreams",
+    "post": 3,
+    "created_at": "2019-08-14T15:50:55.320Z",
+    "created_by": 2
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 37,
+  "fields": {
+    "body": "Just because you fail once doesn't mean you're gonna fail at everything",
+    "post": 3,
+    "created_at": "2019-08-14T15:51:06.525Z",
+    "created_by": 3
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 38,
+  "fields": {
+    "body": "Life is full of screwups. You're supposed to fail sometimes. It's a required part of the human existence",
+    "post": 3,
+    "created_at": "2019-08-14T15:51:19.396Z",
+    "created_by": 4
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 39,
+  "fields": {
+    "body": "One thing at a time. Most important thing first. Start now",
+    "post": 3,
+    "created_at": "2019-08-14T15:51:36.619Z",
+    "created_by": 4
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 40,
+  "fields": {
+    "body": "Our greatest fear should not be of failure but of succeeding at things in life that don\u2019t really matter",
+    "post": 2,
+    "created_at": "2019-08-14T15:51:51.544Z",
+    "created_by": 5
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 41,
+  "fields": {
+    "body": "o succeed, you have to do something and be very bad at it for a while. You have to look bad before you can look really good",
+    "post": 2,
+    "created_at": "2019-08-14T15:52:01.455Z",
+    "created_by": 6
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 42,
+  "fields": {
+    "body": "If you don\u2019t like something change it; if you can\u2019t change it, change the way you think about it",
+    "post": 2,
+    "created_at": "2019-08-14T15:52:13.442Z",
+    "created_by": 2
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 43,
+  "fields": {
+    "body": "If you embrace your flaws, nobody can use them against you",
+    "post": 1,
+    "created_at": "2019-08-14T15:52:22.906Z",
+    "created_by": 2
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 44,
+  "fields": {
+    "body": "What a wonderful life I\u2019ve had! I only wish I\u2019d realized it sooner.",
+    "post": 1,
+    "created_at": "2019-08-14T15:52:31.272Z",
+    "created_by": 3
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 45,
+  "fields": {
+    "body": "Always concentrate on how far you have come, rather than how far you have left to go. The difference in how easy it seems will amaze you",
+    "post": 1,
+    "created_at": "2019-08-14T15:52:42.988Z",
+    "created_by": 4
+  }
+}
+]
