@@ -4,7 +4,7 @@
   "pk": 1,
   "fields": {
     "password": "pbkdf2_sha256$150000$htFm1TcL4N6o$G2xcordM6xS2hNrdk87wU0MCqgpJStstOV3khXKDMWI=",
-    "last_login": "2019-08-14T15:00:45.477Z",
+    "last_login": "2019-08-15T08:51:01.256Z",
     "is_superuser": true,
     "username": "admin",
     "first_name": "",
@@ -705,6 +705,54 @@
     "post": 1,
     "created_at": "2019-08-14T15:52:42.988Z",
     "created_by": 4
+  }
+},
+{
+  "model": "authtoken.token",
+  "pk": "23c59efd4e3fb09e71ad784e56d732d3aef1a7c6",
+  "fields": {
+    "user": 3,
+    "created": "2019-08-15T08:51:15.836Z"
+  }
+},
+{
+  "model": "authtoken.token",
+  "pk": "49c7973a28279aa4f1a6c2cd5e04ce72e05d54e8",
+  "fields": {
+    "user": 1,
+    "created": "2019-08-15T08:51:29.303Z"
+  }
+},
+{
+  "model": "authtoken.token",
+  "pk": "4feb853ac666447814e0392a12713d48c7c67dad",
+  "fields": {
+    "user": 6,
+    "created": "2019-08-15T08:51:25.655Z"
+  }
+},
+{
+  "model": "authtoken.token",
+  "pk": "56f8624fdb3051f7036be62108441ff900a71a74",
+  "fields": {
+    "user": 4,
+    "created": "2019-08-15T08:51:19.158Z"
+  }
+},
+{
+  "model": "authtoken.token",
+  "pk": "6280ef2fd58d3d3e7a85c549b5ff5d422ae1df96",
+  "fields": {
+    "user": 2,
+    "created": "2019-08-15T08:51:12.479Z"
+  }
+},
+{
+  "model": "authtoken.token",
+  "pk": "b7306760df642290c8eea133f7ce9bc8c3d5f121",
+  "fields": {
+    "user": 5,
+    "created": "2019-08-15T08:51:22.647Z"
   }
 }
 ]
