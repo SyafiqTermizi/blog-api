@@ -1,5 +1,5 @@
 from rest_framework.serializers import ModelSerializer, CurrentUserDefault
-from rest_framework.fields import CharField, HiddenField
+from rest_framework.fields import CharField
 
 
 from .models import Post
