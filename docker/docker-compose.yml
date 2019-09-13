@@ -1,5 +1,9 @@
 version: '3'
 
+configs:
+  api_server_config:
+    file: ./nginx.conf
+
 services:
   api_db:
     image: postgres:11.2-alpine
@@ -21,3 +25,15 @@ services:
       - api_db
     ports:
       - 8000:8000
+
+  question_server:
+    image: nginx:1.15.8-alpine
+    ports:
+      - 80:80
+    volumes:
+      - question_staticfiles:/staticfiles:ro
+    configs:
+      - source: api_server_config
+        target: /etc/nginx/nginx.conf
+    depends_on:
+      - question_prod
