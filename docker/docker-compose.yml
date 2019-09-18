@@ -1,8 +1,11 @@
-version: '3'
+version: '3.7'
 
 configs:
   api_server_config:
     file: ./nginx.conf
+
+volumes:
+  api_staticfiles:
 
 services:
   api_db:
@@ -13,27 +16,25 @@ services:
       - 5400:5432
   
   api_app:
-    build:
-      context: ../
-      dockerfile: ./docker/Dockerfile
+    image: registry.gitlab.com/ahmadsyafiq93/blog-api:latest
     command: /start
-    volumes:
-      - ../:/app
     env_file:
       - ../.env
     depends_on:
       - api_db
     ports:
       - 8000:8000
+    volumes:
+      - api_staticfiles:/app/staticfiles
 
-  question_server:
+  api_server:
     image: nginx:1.15.8-alpine
     ports:
       - 80:80
-    volumes:
-      - question_staticfiles:/staticfiles:ro
     configs:
       - source: api_server_config
         target: /etc/nginx/nginx.conf
+    volumes:
+      - api_staticfiles:/staticfiles:ro
     depends_on:
-      - question_prod
+      - api_app
