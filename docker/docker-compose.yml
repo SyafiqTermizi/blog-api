@@ -6,10 +6,13 @@ configs:
 
 volumes:
   api_staticfiles:
+  production_postgres_data: {}
 
 services:
   api_db:
     image: postgres:11.2-alpine
+    volumes:
+      - production_postgres_data:/var/lib/postgresql/data
     env_file:
       - ../.env
     ports:
