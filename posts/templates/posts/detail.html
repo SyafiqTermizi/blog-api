@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load moment %}
+
+{% block title %}
+Post Detail
+{% endblock title %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <div class="card mt-5">
+        	<div class="card-body">
+        		<h5 class="card-title text-center">{{ data.title }}</h5>
+        		<h6 class="card-subtitle mb-2 text-muted text-center">
+                    {{ data.created_by }},
+                    {{ data.created_at|moment }}
+                </h6>
+        		<br>
+        		<p class="card-text">{{ data.body }}</p>
+        	</div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

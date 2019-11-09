@@ -1,0 +1,24 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/#">Navbar</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            {% if user.is_authenticated %}
+                <li class="nav-item">
+                  <a id="add" class="nav-link" href="/create/">Add post</a>
+                </li>
+            {% else %}
+                <li class="nav-item">
+                  <a id="login" class="nav-link" href="/login/">Login</a>
+                </li>
+            {% endif %}
+        </ul>
+        <div id="logout" class="my-2 my-lg-0">
+            {% if user.is_authenticated %}
+                Logout
+            {% endif %}
+        </div>
+    </div>
+</nav>

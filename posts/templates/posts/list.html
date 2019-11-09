@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load moment %}
+
+{% block title %}
+Post List
+{% endblock title %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        {% for post in data %}
+            <div class="card mt-5">
+            	<div class="card-body">
+            		<h5 class="card-title text-center">{{ post.title }}</h5>
+            		<h6 class="card-subtitle mb-2 text-muted text-center">
+                        {{ post.created_by }},
+                        {{ post.created_at|moment }}
+                        {{ post.kambing }}
+                    </h6>
+            		<br>
+                    <p class="card-text">{{ post.body|truncatechars:300 }}</p>
+        		    <div class="text-right">
+        		    	<a class="btn btn-outline-primary" href="{% url 'post-detail' post.pk %}">
+                            Continue reading &gt;
+                        </a>
+        		    </div>
+            	</div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock content %}
