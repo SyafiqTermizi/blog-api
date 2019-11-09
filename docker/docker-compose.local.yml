@@ -1,0 +1,21 @@
+version: '3.7'
+
+services:
+  api_db:
+    image: postgres:11.2-alpine
+    env_file:
+      - ../.env
+    ports:
+      - 5400:5432
+  
+  api_app:
+    build:
+      context: ../
+      dockerfile: ./docker/Dockerfile
+    command: /startlocal
+    env_file:
+      - ../.env
+    depends_on:
+      - api_db
+    ports:
+      - 8000:8000

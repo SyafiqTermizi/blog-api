@@ -19,6 +19,11 @@ RUN sed -i 's/\r//' /entrypoint
 RUN chmod +x /entrypoint
 RUN chown django /entrypoint
 
+COPY ./docker/start-local /startlocal
+RUN sed -i 's/\r//' /startlocal
+RUN chmod +x /startlocal
+RUN chown django /startlocal
+
 COPY ./docker/start /start
 RUN sed -i 's/\r//' /start
 RUN chmod +x /start
