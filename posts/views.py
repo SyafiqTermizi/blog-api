@@ -6,6 +6,8 @@ from rest_framework.renderers import TemplateHTMLRenderer, JSONRenderer
 
 from django.utils import timezone
 
+from comments.models import Comment
+
 from .models import Post
 from .serializers import PostSerializer
 
@@ -38,8 +40,9 @@ class PostViewSet(ModelViewSet):
     def retrieve(self, request, *args, **kwargs):
         if request.accepted_renderer.format == 'html':
             response = super().retrieve(request, *args, **kwargs)
+            comments = Comment.objects.filter(post=Post(pk=response.data['pk']))
             return Response(
-                {'data': response.data},
+                {'data': response.data, 'comments': comments},
                 template_name='posts/detail.html'
             )
         return super().retrieve(request, *args, **kwargs)
