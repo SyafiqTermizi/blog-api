@@ -51,6 +51,7 @@ class TestPostViews(APITestCase):
         request = APIRequestFactory()
         request.accepted_renderer = template_renderer
         request.query_params = dict()
+        request.GET = {}
 
         view = PostViewSet()
         view.action = 'list'

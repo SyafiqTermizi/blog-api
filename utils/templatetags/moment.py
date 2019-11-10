@@ -8,4 +8,6 @@ register = Library()
 @register.filter
 @stringfilter
 def moment(time):
-    return arrow.get(time).humanize()
+    if time:
+        return arrow.get(time).humanize()
+    return None

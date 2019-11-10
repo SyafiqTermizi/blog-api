@@ -26,9 +26,11 @@ class PostViewSet(ModelViewSet):
 
     def list(self, request, *args, **kwargs):
         if request.accepted_renderer.format == 'html':
-            response = super().list(request, *args, **kwargs)
+            response = super().list(request, *args, **kwargs).data
+            if self.request.GET.get('limit'):
+                response = response['results']
             return Response(
-                {'data': response.data},
+                {'data': response},
                 template_name='posts/list.html'
             )
         return super().list(request, *args, **kwargs)
