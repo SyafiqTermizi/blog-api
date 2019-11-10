@@ -1,7 +1,7 @@
 from rest_framework.test import APITestCase, APIRequestFactory, APIClient
 from django.urls import reverse
 from django.contrib.auth import get_user_model
-
+from rest_framework.renderers import TemplateHTMLRenderer
 from posts.views import PostViewSet
 from posts.models import Post
 
@@ -37,9 +37,42 @@ class TestPostViews(APITestCase):
         client = APIClient()
         client.login(username='admin', password='password123321')
         client.post(
-            '/api/posts/',
+            '/posts.json',
             data={'title': 'test', 'body': 'test'},
             format='json'
         )
         p = Post.objects.first()
         self.assertEqual(p.created_by_id, 1)
+
+    def test_list(self):
+        template_renderer = TemplateHTMLRenderer
+        template_renderer.format = 'html'
+
+        request = APIRequestFactory()
+        request.accepted_renderer = template_renderer
+        request.query_params = dict()
+
+        view = PostViewSet()
+        view.action = 'list'
+        view.request = request
+        view.format_kwarg = ''
+
+        response = view.list(request)
+        self.assertEqual(response.template_name, 'posts/list.html')
+
+    def test_retrieve(self):
+        template_renderer = TemplateHTMLRenderer
+        template_renderer.format = 'html'
+
+        request = APIRequestFactory()
+        request.accepted_renderer = template_renderer
+        request.query_params = dict()
+
+        view = PostViewSet()
+        view.kwargs = {'pk': 1}
+        view.action = 'retrieve'
+        view.request = request
+        view.format_kwarg = ''
+
+        response = view.retrieve(request)
+        self.assertEqual(response.template_name, 'posts/detail.html')
