@@ -1,6 +1,6 @@
 arrow==0.15.4
 astroid==2.2.5
-Django==2.2.4
+Django==2.2.8
 django-cors-headers==3.1.0
 djangorestframework==3.10.2
 gunicorn==19.9.0
